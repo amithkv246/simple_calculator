@@ -7,5 +7,8 @@
 }
 
 body {
-  /* background-color: #777777 !important; */
+  background-color: #777777 !important;
+  /* display: flex; 
+  justify-content: center;
+  align-items: center; */
 }
