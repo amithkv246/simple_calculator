@@ -7,9 +7,11 @@ export default function App() {
   const [result, setResult] = useState("")
 
   function handleCalculation(value) {
+
     setCalculation(calculation + value)
   }
   function handleResult() {
+  
     setResult(eval(calculation))
   }
   function handleAllClear() {
@@ -25,7 +27,12 @@ export default function App() {
       <div className="container w-25 bg-light rounded-3 p-3">
         <Display calculation={calculation} result={result} />
 
-        <Numpad />
+        <Numpad
+          handleCalculation={handleCalculation}
+          handleResult={handleResult}
+          handleAllClear={handleAllClear}
+          handleBackspace={handleBackspace}
+        />
       </div>
     </>
 

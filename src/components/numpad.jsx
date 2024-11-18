@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-export default function Numpad() {
-
+export default function Numpad({ handleCalculation, handleResult, handleAllClear, handleBackspace }) {
+        console.log(handleResult)
     return (
 
         <React.Fragment>
